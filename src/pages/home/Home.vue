@@ -8,11 +8,16 @@
 	 <!-- navigation -->
 	 <navgation></navgation>
 	 <!-- content -->
-	 <contenter></contenter>
+		<!-- 首页 -->
+	 <visualCore></visualCore>
+		<!-- 地理信息-->
+	<!-- <geography></geography> -->
+		<!-- 社交网络 -->
+	<!-- <socialNet></socialNet> -->
 	 <!-- footer -->
-	 <footer class="text-right">
-	   <p>Copyright &copy; 2084 Company Name 
-	   | Designed by <a href="http://www.templatemo.com" target="_parent">templatemo</a></p>
+	 <footer class="text-right footer">
+	   <p>博主qq 1054660480 
+	   | Designed by <a href="http://www.templatemo.com" target="_parent">亢龙无悔</a></p>
 	 </footer> 
    </div>
  </div>
@@ -21,12 +26,16 @@
 <script>
 	import sider from './siderBar.vue'
 	import navgation from "./navgation.vue"
-	import contenter from "./content.vue"
+	import visualCore from "../content/visualCore-test.vue"
+	import geography from "../content/geography.vue"
+	import socialNet from "../content/socialNet.vue"
 	export default{
 		components:{
 			'navgation':navgation,
 			'sider':sider,
-			'contenter':contenter,
+			'visualCore':visualCore,
+			'geography':geography,
+			'socialNet':socialNet,
 		},
 		data(){
 			return{
@@ -44,4 +53,9 @@
 @import url("../static/css/bootstrap.min.css");
 @import url("../static/css/font-awesome.min.css");
 @import url("../static/css/templatemo-style.css");
+.footer{
+	position:fixed;
+	bottom: 5px;
+	right: 50px;
+}
 </style>

@@ -2,7 +2,7 @@
 	<div class="templatemo-sidebar">
 	  <header class="templatemo-site-header">
 	    <div class="square"></div>
-	    <h1>Visual Admin</h1>
+	    <h1>Visual Core</h1>
 	  </header>
 	  <div class="profile-photo-container">
 	    <img src="../static/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
@@ -20,13 +20,13 @@
 	  </div>
 	  <nav class="templatemo-left-nav">          
 	    <ul>
-	      <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-	      <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li>
-	      <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Data Visualization</a></li>
-	      <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li>
-	      <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li>
-	      <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Preferences</a></li>
-	      <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+	      <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>视核</a></li>
+	      <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>表格</a></li>
+	      <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>图</a></li>
+	      <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>地理信息</a></li>
+	      <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>社交网络</a></li>
+	      <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>配置</a></li>
+	      <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Contact Me</a></li>
 	    </ul>  
 	  </nav>
 	</div>

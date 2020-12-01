@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "element-ui": "^2.14.1",
     "fastclick": "^1.0.6",
     "vue": "^2.6.10",
     "vue-router": "^3.4.9"
