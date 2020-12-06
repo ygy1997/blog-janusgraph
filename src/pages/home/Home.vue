@@ -9,11 +9,13 @@
 	 <navgation></navgation>
 	 <!-- content -->
 		<!-- 首页 -->
-	 <visualCore></visualCore>
-		<!-- 地理信息-->
+	 <!-- <visualCore></visualCore> -->
+		<!-- 地理信息 -->
 	<!-- <geography></geography> -->
 		<!-- 社交网络 -->
 	<!-- <socialNet></socialNet> -->
+		<!-- 画布 -->
+	<antGraph></antGraph>
 	 <!-- footer -->
 	 <footer class="text-right footer">
 	   <p>博主qq 1054660480 
@@ -29,6 +31,7 @@
 	import visualCore from "../content/visualCore-test.vue"
 	import geography from "../content/geography.vue"
 	import socialNet from "../content/socialNet.vue"
+	import antGraph from "../content/antGraph.vue"
 	export default{
 		components:{
 			'navgation':navgation,
@@ -36,6 +39,7 @@
 			'visualCore':visualCore,
 			'geography':geography,
 			'socialNet':socialNet,
+			'antGraph':antGraph,
 		},
 		data(){
 			return{
