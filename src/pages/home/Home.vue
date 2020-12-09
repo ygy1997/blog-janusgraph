@@ -9,13 +9,16 @@
 	 <navgation></navgation>
 	 <!-- content -->
 		<!-- 首页 -->
-	 <!-- <visualCore></visualCore> -->
+	 <visualCore></visualCore>
 		<!-- 地理信息 -->
 	<!-- <geography></geography> -->
 		<!-- 社交网络 -->
 	<!-- <socialNet></socialNet> -->
 		<!-- 画布 -->
-	<antGraph></antGraph>
+		<!-- ant-蚂蚁 echats-百度 cytoscape ngraph-->
+	<!-- <antGraph></antGraph> -->
+	<!-- <echartGraph></echartGraph> -->
+	<!-- <ngraphGraph></ngraphGraph> -->
 	 <!-- footer -->
 	 <footer class="text-right footer">
 	   <p>博主qq 1054660480 
@@ -31,7 +34,9 @@
 	import visualCore from "../content/visualCore-test.vue"
 	import geography from "../content/geography.vue"
 	import socialNet from "../content/socialNet.vue"
-	import antGraph from "../content/antGraph.vue"
+	import antGraph from "../content/graph/antGraph.vue"
+	import echartGraph from "../content/graph/echatGraph.vue"
+	import ngraphGraph from "../content/graph/ngraph.vue"
 	export default{
 		components:{
 			'navgation':navgation,
@@ -40,6 +45,8 @@
 			'geography':geography,
 			'socialNet':socialNet,
 			'antGraph':antGraph,
+			"echartGraph":echartGraph,
+			"ngraphGraph":ngraphGraph,
 		},
 		data(){
 			return{
@@ -47,6 +54,8 @@
 			}
 		},
 		created() {
+			
+		},methods:{
 			
 		}
 	}
@@ -61,5 +70,8 @@
 	position:fixed;
 	bottom: 5px;
 	right: 50px;
+}
+.templatemo-content{
+	overflow:hidden
 }
 </style>
