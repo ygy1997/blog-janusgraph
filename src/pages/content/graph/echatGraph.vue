@@ -1,14 +1,15 @@
 <template>
-	<div class="templatemo-content-container">
-		<div id="container" >
+		<div id="containerEchart"  >
 		</div>
-	</div>
 </template>
 
 <script>
 	import * as echarts from 'echarts';
 	const echart = require('echarts')
 	export default {
+		props:{
+			graphData:Object
+		},
 		components: {
 		},
 		data() {
@@ -24,11 +25,7 @@
 		},
 		methods: {
 			async graphInit(){
-				const response = await fetch(
-					'https://gw.alipayobjects.com/os/basement_prod/6cae02ab-4c29-44b2-b1fd-4005688febcb.json',
-				);
-				const graph = await response.json();
-				console.log('graph',graph)
+				var graph=this.graphData
 				var option = {
 				        title: {
 				            text: 'Les Miserables',
@@ -39,7 +36,6 @@
 				        tooltip: {},
 				        animationDuration: 1500,
 				        animationEasingUpdate: 'quinticInOut',
-	
 				        series : [
 				            {
 				                name: 'blog',
@@ -71,7 +67,7 @@
 				            }
 				        ]
 				    };
-				var myChart=echarts.init(document.getElementById('container'))
+				var myChart=echarts.init(document.getElementById('containerEchart'))
 				myChart.setOption(option);
 				window.onresize = myChart.resize
 			}
@@ -80,5 +76,4 @@
 </script>
 
 <style scoped="graph">
-@import url("./graph.css");
 </style>

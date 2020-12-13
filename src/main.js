@@ -6,6 +6,13 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
 
+import VueChimera from "vue-chimera"
+Vue.use(VueChimera, {
+	headers: {
+		'Content-Type': 'application/x-www-form-urlencoded',
+		'Access-Control-Allow-Origin':'http://localhost:8000'
+		}
+})
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false

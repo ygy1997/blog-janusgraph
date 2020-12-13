@@ -1,13 +1,14 @@
 <template>
-	<div class="templatemo-content-container">
-		<div id="container" >
+		<div id="containerAnt" >
 		</div>
-	</div>
 </template>
 
 <script>
 	import G6 from "@antv/g6";
 	export default {
+		props:{
+			graphData:Object,
+		},
 		components: {
 
 		},
@@ -25,25 +26,6 @@
 				},
 				layoutType: "random",
 				antGraph: "",
-				graphData: {
-					nodes: [{
-							id: "node1",
-							label: "Circle1",
-							x: 150,
-							y: 150
-						},
-						{
-							id: "node2",
-							label: "Circle2",
-							x: 400,
-							y: 150
-						}
-					],
-					edges: [{
-						source: "node1",
-						target: "node2"
-					}]
-				}
 			}
 		},
 		created() {
@@ -53,7 +35,7 @@
 			})
 		},
 		methods: {
-			async graphInit() {
+			graphInit() {
 				const menu = new G6.Menu();
 				const tooltip = new G6.Tooltip();
 				this.graph = new G6.Graph({
@@ -74,8 +56,8 @@
 
 						],
 					},
-					container: "container",
-					// fitView: true,
+					container: "containerAnt",
+					fitView: true,
 					// fitViewPadding: 20,
 					// fitCenter: true,
 					width: 760,
@@ -111,12 +93,7 @@
 					},
 					plugins: [menu,tooltip],
 				});
-				const response = await fetch(
-					'https://gw.alipayobjects.com/os/basement_prod/6cae02ab-4c29-44b2-b1fd-4005688febcb.json',
-				);
-				const remoteData = await response.json();
-				
-				this.graph.data(remoteData);
+				this.graph.data(this.graphData);
 				this.graph.render();
 			},
 			handleClick() {
@@ -136,5 +113,4 @@
 
 
 <style scoped="graph">
-@import url("./graph.css");
 </style>
