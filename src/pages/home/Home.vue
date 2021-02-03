@@ -13,7 +13,7 @@
 
 			<!-- content -->
 			<!-- 首页 -->
-			<baseGraph v-if="$route.path==='/blog'"></baseGraph>
+			<blog v-if="$route.path==='/blog'"></blog>
 			<graphAdmin v-else-if="$route.path==='/admin'"></graphAdmin>
 			<visualCore v-else-if="$route.path==='/home'"></visualCore>
 			<!-- footer -->
@@ -29,7 +29,7 @@
 	import sider from './siderBar.vue'
 	import navgation from "./navgation.vue"
 	import visualCore from "../content/visualCore.vue"
-	import baseGraph from "../content/baseGraph.vue"
+	import blog from "../content/project/blog.vue"
 	import graphAdmin from "../content/graphAdmin.vue"
 	const printf = console.log
 	export default {
@@ -38,7 +38,7 @@
 			'navgation': navgation,
 			'sider': sider,
 			'visualCore': visualCore,
-			'baseGraph': baseGraph,
+			'blog': blog,
 			'graphAdmin': graphAdmin,
 		},
 		data() {
@@ -67,7 +67,7 @@
 	/* .templatemo-content{
 		overflow:hidden
 	} */
-	.baseGraph {
+	.blog {
 		width: 100%;
 		height: 100%;
 	}
