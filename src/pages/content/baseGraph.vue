@@ -1,18 +1,6 @@
 <template>
 	<div class="templatemo-content-container">
-		<div class="templatemo-flex-row flex-content-row">
-			<div class="col-1">
-				<div class="templatemo-content-widget white-bg">
-					<i class="fa fa-close fa-1x iconFunc"></i>
-					<h2 class="text-uppercase margin-bottom-10">Graph System</h2>
-					<h3 class="text-uppercase margin-bottom-10">图引擎--{{graphEngine.name}}
-						<input class="form-control" @change="graphEngineChange">
 
-						</input>
-					</h3>
-				</div>
-			</div>
-		</div>
 		<div class="templatemo-flex-row flex-content-row">
 			<div class="col-2">
 				<div class="templatemo-content-widget white-bg">
@@ -27,22 +15,6 @@
 						<antGraph :graphData="graphData" v-if="graphEngine.name==='antV'"></antGraph>
 						<ngraphGraph :graphData="graphData" v-if="graphEngine.name==='ngraph'"></ngraphGraph>
 					</div>
-				</div>
-			</div>
-			<div class="col-1">
-				<div class="templatemo-content-widget pink-bg">
-					<i class="fa fa-close fa-1x iconFunc"></i>
-					<h2 class="text-uppercase margin-bottom-10">Latest Data</h2>
-					<p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi sapien, fringilla at
-						orci nec, viverra rhoncus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus erat non
-						purus commodo, sit amet varius dolor sagittis.</p>
-				</div>
-				<div class="templatemo-content-widget pink-bg">
-					<i class="fa fa-close fa-1x iconFunc"></i>
-					<h2 class="text-uppercase margin-bottom-10">Latest Data</h2>
-					<p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi sapien, fringilla at
-						orci nec, viverra rhoncus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus erat non
-						purus commodo, sit amet varius dolor sagittis.</p>
 				</div>
 			</div>
 		</div>

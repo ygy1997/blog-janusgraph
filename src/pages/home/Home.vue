@@ -3,43 +3,19 @@
 	<div class="templatemo-flex-row">
 
 		<!-- siderbar -->
-		<sider v-show="showMax==false" ></sider>
+		<sider ></sider>
 		<!-- Main content -->
 		<div class="templatemo-content col-1 light-gray-bg">
 
 			<!-- navigation -->
-			<navgation v-show="showMax==false"></navgation>
-			<el-menu class="el-menu-demo" :default-active="$route.path" :router="true" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="orange">
-				<el-menu-item index="/home">
-						<i class="fa fa-home fa-fw"></i>主页 Viasul Core
-				</el-menu-item>
-				<el-submenu index="" >
-					<template slot="title">图库系统</template>
-					<el-menu-item index="/blog">
-						<i class="fa fa-pencil fa-fw"></i> 博客  Blog
-					</el-menu-item>
-					<el-menu-item index="2-2">选项2</el-menu-item>
-					<el-menu-item index="2-3">选项3</el-menu-item>
-					<el-submenu index="2-4">
-						<template slot="title">网页存档</template>
-						<el-menu-item index="blog/0">blog-0</el-menu-item>
-						<el-menu-item index="blog/1">blog-1</el-menu-item>
-						<el-menu-item index="blog/2">blog-2</el-menu-item>
-					</el-submenu>
-				</el-submenu>
-				<el-menu-item index="/admin" >
-					<i class="fa fa-spinner fa-spin fa-fw"></i>控制台 Admin
-				</el-menu-item>
-				<el-menu-item index=""  @click="hideLeftAndTop">
-					全屏模式：{{ showMax?"开":"关"}}
-				</el-menu-item>
-			</el-menu>
+			<navgation ></navgation>
+	
 
 			<!-- content -->
 			<!-- 首页 -->
 			<baseGraph v-if="$route.path==='/blog'"></baseGraph>
 			<graphAdmin v-else-if="$route.path==='/admin'"></graphAdmin>
-			<visualCore v-else></visualCore>
+			<visualCore v-else-if="$route.path==='/home'"></visualCore>
 			<!-- footer -->
 			<footer class="text-right footer">
 				<p>博主qq 1054660480
@@ -67,15 +43,11 @@
 		},
 		data() {
 			return {
-				showMax: false,
 			}
 		},
 		created() {
 		},
 		methods: {
-			hideLeftAndTop() {
-				this.showMax = !this.showMax
-			}
 		}
 	}
 </script>

@@ -21,38 +21,6 @@
 				<h3 class="text-uppercase margin-bottom-10">Blog Article</h3>
 				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail"></router-link>
 			</div>
-			<div class="templatemo-content-widget white-bg col-1 text-center"  id="blog" to="/blog">
-				<i class="fa fa-play-circle fa-lg"></i>
-				<h2 class="text-uppercase">英语词汇</h2>
-				<h3 class="text-uppercase margin-bottom-10">English Vocabulary</h3>
-				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
-			</div>
-			<div class="templatemo-content-widget white-bg col-1 text-center"  id="blog" to="/blog">
-				<i class="fa fa-play-circle fa-lg"></i>
-				<h2 class="text-uppercase">社交网络</h2>
-				<h3 class="text-uppercase margin-bottom-10">Social Net</h3>
-				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
-			</div>
-		</div>
-		<div class="templatemo-flex-row flex-content-row">
-			<div class="templatemo-content-widget white-bg col-1 text-center" id="blog" to="/blog">
-				<i class="fa fa-play-circle fa-lg"></i>
-				<h2 class="text-uppercase">影评</h2>
-				<h3 class="text-uppercase margin-bottom-10">Film Reviews</h3>
-				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
-			</div>
-			<div class="templatemo-content-widget white-bg col-1 text-center" id="blog" to="/blog">
-				<i class="fa fa-play-circle fa-lg"></i>
-				<h2 class="text-uppercase">影评</h2>
-				<h3 class="text-uppercase margin-bottom-10">Film Reviews</h3>
-				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
-			</div>
-			<div class="templatemo-content-widget white-bg col-1 text-center">
-				<i class="fa fa-play-circle fa-lg"></i>
-				<h2 class="text-uppercase">房地产</h2>
-				<h3 class="text-uppercase margin-bottom-10">Film Reviews</h3>
-				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
-			</div>
 		</div>
 		<div class="templatemo-flex-row flex-content-row">
 			<div class="templatemo-content-widget white-bg col-1 text-center">
